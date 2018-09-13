@@ -136,7 +136,7 @@ body {
   font-size: 1.6rem;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -149,6 +149,5 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 1200px;
   margin: 0 auto;
 }
