@@ -158,15 +158,11 @@ p {
   display: flex;
   justify-content: flex-start;
   height: 170px;
-  background-color: #BDBDBD;
-}
-.container .profile-banner img {
-  border: 2px solid black;
-  margin-top: 15px;
-  margin-left: 6%;
-  width: 150px;
-  height: 140px;
-  border-radius: 50%;
+  background-image: url(/img/california-hill-hollywood-164183.jpg);
+  background-position: 50% 47%;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
 }
 .container .motto {
   display: flex;
@@ -198,20 +194,20 @@ p {
   height: auto;
   padding-top: 70px;
   padding-bottom: 100px;
-  background-color: #BDBDBD;
+  background-color: #4f4f4f;
 }
 .container #portfolio h2 {
   text-align: center;
   font-size: 4rem;
   text-decoration-line: underline;
   margin-bottom: 40px;
+  color: white;
 }
 .container #portfolio .panel-grid {
   width: 80%;
   height: auto;
   padding-bottom: 75px;
-  border: 2px solid black;
-  background-color: white;
+  background-color: #4f4f4f;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -219,7 +215,7 @@ p {
 }
 .container #portfolio .panel-grid .panel {
   text-align: center;
-  width: 35%;
+  width: 30%;
   height: auto;
   margin-top: 75px;
 }
@@ -230,6 +226,14 @@ p {
 }
 .container #portfolio .panel-grid .panel img:hover {
   box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+}
+.container #about-me img {
+  border: 2px solid black;
+  margin-top: 15px;
+  margin-left: 6%;
+  width: 150px;
+  height: 140px;
+  border-radius: 50%;
 }
 .container header {
   max-width: 100%;
