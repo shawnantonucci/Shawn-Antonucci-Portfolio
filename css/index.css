@@ -180,9 +180,9 @@ p {
 }
 .container .laptop-background {
   background-image: url(/img/grayscale\ laptop.jpeg);
-  background-position: 50% 80%;
+  background-position: 50% 70%;
   background-size: cover;
-  height: 837px;
+  height: 600px;
   width: 100%;
 }
 .container #portfolio {
@@ -194,20 +194,20 @@ p {
   height: auto;
   padding-top: 70px;
   padding-bottom: 100px;
-  background-color: #4f4f4f;
+  background-color: white;
 }
 .container #portfolio h2 {
   text-align: center;
   font-size: 4rem;
   text-decoration-line: underline;
   margin-bottom: 40px;
-  color: white;
+  color: black;
 }
 .container #portfolio .panel-grid {
   width: 80%;
   height: auto;
   padding-bottom: 75px;
-  background-color: #4f4f4f;
+  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -215,7 +215,7 @@ p {
 }
 .container #portfolio .panel-grid .panel {
   text-align: center;
-  width: 30%;
+  width: 35%;
   height: auto;
   margin-top: 75px;
 }
