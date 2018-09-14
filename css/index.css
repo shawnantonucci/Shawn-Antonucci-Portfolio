@@ -154,8 +154,18 @@ p {
   margin: 0 auto;
 }
 .container .profile-banner {
-  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  height: 170px;
   background-color: #BDBDBD;
+}
+.container .profile-banner img {
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 7%;
+  width: 150px;
+  height: 130px;
+  border-radius: 50%;
 }
 .container .motto {
   display: flex;
