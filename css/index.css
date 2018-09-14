@@ -189,6 +189,48 @@ p {
   height: 837px;
   width: 100%;
 }
+.container #portfolio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: #BDBDBD;
+}
+.container #portfolio h2 {
+  text-align: center;
+  font-size: 4rem;
+  text-decoration-line: underline;
+  margin-bottom: 40px;
+}
+.container #portfolio .panel-grid {
+  width: 80%;
+  height: auto;
+  padding-bottom: 75px;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container #portfolio .panel-grid .panel {
+  text-align: center;
+  width: 35%;
+  height: auto;
+  margin-top: 75px;
+}
+.container #portfolio .panel-grid .panel img {
+  border: 1px solid black;
+  max-width: 100%;
+  height: auto;
+}
+.container #portfolio .panel-grid .panel img:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+}
 .container header {
   max-width: 100%;
   height: 70px;
