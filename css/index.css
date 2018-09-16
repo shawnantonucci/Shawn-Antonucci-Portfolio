@@ -336,8 +336,8 @@ p {
 .contact {
   max-width: 100%;
   background: black;
-  padding-bottom: 400px;
-  padding-top: 400px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 @media (max-width: 500px) {
   .contact {
@@ -346,7 +346,7 @@ p {
   }
 }
 .contact .header {
-  padding: 300px 0 110px 0;
+  padding: 200px 0 110px 0;
   color: white;
 }
 @media (max-width: 500px) {
