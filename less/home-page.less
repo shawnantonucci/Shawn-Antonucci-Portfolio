@@ -1,102 +1,198 @@
-.container {
+.intro {
+  max-width: 100%;
+  top: 0;
+  background: url(/img/LA-skyline.jpg);
+  color: white;
+  background-position: 50% 45%;
+  min-height: 100vh;
+  padding-top: 50vh;
 
-    .profile-banner {
+  @media @phone {
+    padding-top: 40vh;
+  }
 
-        display: flex;
-        justify-content: flex-start;
-        height: 170px;
-        //sbackground-color: #BDBDBD;
-        background-image: url(/img/california-hill-hollywood-164183.jpg);
-        background-position: 50% 47%;
-        background-size: cover;
-        height: 500px;
-        width: 100%;
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+
+    @media @phone {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.motto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 175px;
+  background-color: #4f4f4f;
+  color: white;
+
+  h2 {
+    text-align: center;
+    width: 70%;
+    font-size: 2.5rem;
+  }
+}
+
+.laptop-background {
+  background-image: url(/img/grayscale\ laptop.jpeg);
+  background-position: 50% 70%;
+  background-size: cover;
+  height: 600px;
+}
+
+.work {
+  max-width: 100%;
+  padding-top: 60px;
+  margin-top: -60px;
+
+  .work-header {
+    margin-top: 50px;
+    color: black;
+    font-size: 2.5rem;
+    text-decoration-line: underline;
+    font-weight: bold;
+  }
+}
+
+#projects {
+  max-width: 100%;
+
+  .project {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid black;
+    height: 220px;
+    width: 300px;
+    margin: 100px 10% 50px 10%;
+
+    @media @tablet {
+      margin: 30px 5%;
     }
 
-    .motto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column;
-        height: 175px;
-        background-color: #4f4f4f;
-        color: white;
-
-        h2 {
-            text-align: center;
-            width: 70%;
-            font-size: 3rem;
-        }
+    @media @phone {
+      width: 250px;
     }
 
-    .laptop-background {
-        background-image: url(/img/grayscale\ laptop.jpeg);
-        background-position: 50% 70%;
-        background-size: cover;
-        height: 600px;
-        width: 100%;
-
+    .project-pic {
+      width: 100%;
+      height: 180px;
+      border-bottom: 2px solid lightblue;
     }
 
-    #portfolio {
+    .project-title {
+      margin-top: 8px;
+      font-weight: 500;
+    }
+  }
 
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding-top: 70px;
-        padding-bottom: 100px;
-        background-color: white;
+  .show-all {
+    max-width: 100%;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto 90px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: 10px;
 
-        h2 {
-            text-align: center;
-            font-size: 4rem;
-            text-decoration-line: underline;
-            margin-bottom: 40px;
-            color: black;
-        }
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+}
 
-        .panel-grid {
-            width: 80%;
-            height: auto;
-            padding-bottom: 75px;
-            //border: 2px solid black;
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+#about-me {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-            .panel {
-                text-align: center;
-                width: 35%;
-                height: auto;
-                margin-top: 75px;
+  h2 {
+    font-size: 3rem;
+    text-decoration-line: underline;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 
-                img {
-                    border: 1px solid black;
-                    max-width: 100%;
-                    height: auto;
+  img {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
 
-                    &:hover {
-                        box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
-                    }
-                }
-            }
-        }
+  p {
+    text-align: center;
+    width: 50%;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 50px;
+  }
+}
+
+.hollywood-banner {
+  background-image: url(/img/california-hill-hollywood-164183.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 600px;
+}
+
+.contact {
+  max-width: 100%;
+  background: black;
+  padding-bottom: 150px;
+
+  .header {
+    padding: 300px 0 110px;
+    color: white;
+
+    h1 {
+      font-size: 4.5rem;
     }
 
-    #about-me {
-
-        img {
-            border: 2px solid black;
-            margin-top: 15px;
-            margin-left: 6%;
-            width: 150px;
-            height: 140px;
-            border-radius: 50%;
-        }
+    p {
+      font-size: 1.6rem;
     }
+  }
+
+  .contact-details {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 35px 45px 35px;
+    list-style-type: none;
+    border: 2px solid #90c695;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      background: #e4f1fe;
+      color: red;
+    }
+  }
 }
