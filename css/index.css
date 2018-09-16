@@ -335,8 +335,8 @@ p {
 .contact {
   max-width: 100%;
   background: black;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 300px;
+  padding-top: 300px;
 }
 @media (max-width: 500px) {
   .contact {
