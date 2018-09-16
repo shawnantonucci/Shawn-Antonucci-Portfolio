@@ -164,6 +164,11 @@ p {
 }
 @media (max-width: 500px) {
   .intro {
+    background-position: 37% 47%;
+  }
+}
+@media (max-width: 500px) {
+  .intro {
     padding-top: 40vh;
   }
 }
@@ -194,11 +199,22 @@ p {
   width: 70%;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .motto h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+}
 .laptop-background {
   background-image: url(/img/grayscale\ laptop.jpeg);
   background-position: 50% 70%;
   background-size: cover;
   height: 600px;
+}
+@media (max-width: 500px) {
+  .laptop-background {
+    display: none;
+  }
 }
 .work {
   max-width: 100%;
@@ -212,10 +228,12 @@ p {
   text-decoration-line: underline;
   font-weight: bold;
 }
-#projects {
+#projects,
+#certification {
   max-width: 100%;
 }
-#projects .project {
+#projects .project,
+#certification .project {
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -226,25 +244,30 @@ p {
   margin: 100px 10% 50px 10%;
 }
 @media (max-width: 1025px) {
-  #projects .project {
+  #projects .project,
+  #certification .project {
     margin: 30px 5%;
   }
 }
 @media (max-width: 500px) {
-  #projects .project {
+  #projects .project,
+  #certification .project {
     width: 250px;
   }
 }
-#projects .project .project-pic {
+#projects .project .project-pic,
+#certification .project .project-pic {
   width: 100%;
   height: 180px;
   border-bottom: 2px solid lightblue;
 }
-#projects .project .project-title {
+#projects .project .project-title,
+#certification .project .project-title {
   margin-top: 8px;
   font-weight: 500;
 }
-#projects .show-all {
+#projects .show-all,
+#certification .show-all {
   max-width: 100%;
   text-decoration: none;
   display: block;
@@ -260,12 +283,14 @@ p {
   cursor: pointer;
   padding-top: 10px;
 }
-#projects .show-all:hover {
+#projects .show-all:hover,
+#certification .show-all:hover {
   background: black;
   color: white;
 }
 #about-me {
   margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,11 +317,21 @@ p {
   line-height: 1.4;
   margin-bottom: 50px;
 }
+@media (max-width: 500px) {
+  #about-me p {
+    width: 90%;
+  }
+}
 .hollywood-banner {
   background-image: url(/img/california-hill-hollywood-164183.jpg);
   background-position: 50% 50%;
   background-size: cover;
   height: 560px;
+}
+@media (max-width: 500px) {
+  .hollywood-banner {
+    background-position: 41% 30%;
+  }
 }
 .contact {
   max-width: 100%;
@@ -304,9 +339,20 @@ p {
   padding-bottom: 400px;
   padding-top: 400px;
 }
+@media (max-width: 500px) {
+  .contact {
+    padding-bottom: 100px;
+    padding-top: 0;
+  }
+}
 .contact .header {
-  padding: 300px 0 110px;
+  padding: 300px 0 110px 0;
   color: white;
+}
+@media (max-width: 500px) {
+  .contact .header {
+    padding: 150px 0 100px 0;
+  }
 }
 .contact .header h1 {
   font-size: 4.5rem;
@@ -365,6 +411,8 @@ nav ul li {
 @media (max-width: 500px) {
   nav ul li {
     margin-top: 15px;
+    padding-bottom: 10px;
+    margin: 10px;
   }
 }
 nav ul li a {
