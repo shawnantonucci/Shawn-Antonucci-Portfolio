@@ -296,12 +296,13 @@ p {
   background-image: url(/img/california-hill-hollywood-164183.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  height: 600px;
+  height: 560px;
 }
 .contact {
   max-width: 100%;
   background: black;
-  padding-bottom: 150px;
+  padding-bottom: 400px;
+  padding-top: 400px;
 }
 .contact .header {
   padding: 300px 0 110px;
@@ -312,6 +313,12 @@ p {
 }
 .contact .header p {
   font-size: 1.6rem;
+}
+.contact .header a {
+  color: white;
+}
+.contact .header a:hover {
+  color: red;
 }
 .contact .contact-details {
   display: inline-block;
