@@ -352,7 +352,7 @@ p {
 }
 @media (max-width: 500px) {
   .contact .header {
-    padding: 150px 0 100px 0;
+    padding: 100px 0 100px 0;
   }
 }
 .contact .header h1 {
