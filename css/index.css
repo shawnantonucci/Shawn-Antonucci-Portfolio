@@ -335,8 +335,8 @@ p {
 .contact {
   max-width: 100%;
   background: black;
-  padding-bottom: 300px;
-  padding-top: 300px;
+  padding-bottom: 100px;
+  padding-top: 221px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,4 +424,18 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: red;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  border-top: 2px solid white;
+}
+footer h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
 }
