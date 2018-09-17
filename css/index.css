@@ -383,8 +383,9 @@ p {
   text-decoration: none;
 }
 .contact .contact-details:hover {
-  background: #e4f1fe;
-  color: red;
+  background: black;
+  border: 2px solid white;
+  color: white;
 }
 nav ul {
   position: fixed;
