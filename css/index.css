@@ -434,8 +434,13 @@ footer {
   background-color: black;
   border-top: 2px solid white;
 }
-footer h2 {
+footer a {
+  text-decoration-line: none;
   font-size: 3rem;
   font-weight: bold;
   color: white;
+}
+footer a:hover {
+  background-color: white;
+  color: black;
 }
