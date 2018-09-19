@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shawn Antonucci's Portfolio</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/index.css" rel="stylesheet">
 </head>
 
@@ -28,7 +29,7 @@
     </div>
 
     <div class="motto">
-        <h2>I create websites exactly how my clients want them. Responsiveness, neatness and cleanliness are a
+        <h2 data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000" >I create websites exactly how my clients want them. Responsiveness, neatness and cleanliness are a
             necessity!</h2>
     </div>
 
@@ -46,7 +47,7 @@
     </div>
 
     <div class="motto">
-        <h2>
+        <h2 data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000" >
             “Getting a quality website is not an expenses but rather an investment.” </h2>
     </div>
 
@@ -64,7 +65,7 @@
         <a href="" class="show-all" target="_blank">Show all</a>
 
         <div class="motto">
-            <h2>
+            <h2 data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000" >
                 “How well we communicate is determined not by how well we say things, but how well we are understood.”
                 –Andrew Grove </h2>
         </div>
@@ -84,13 +85,13 @@
 
         <div class="contact">
             <div id="contact" class="header">
-                <h1>Contact me</h1>
-                <p>I will get back to you ASAP! <br><br>
+                <h1 data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000" >Contact me</h1>
+                <p data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000" >I will get back to you ASAP! <br><br>
                     <a href="tel:1-323-774-6475">1-323-774-6475</a></p>
             </div>
-            <a id="profile-link" href="https://github.com/shawnantonucci" target="_blank" class="contact-details">GitHub</a>
-            <a href="mailto:shawnantonucci6688@gmail.com" class="contact-details">Send email</a>
-            <a href="tel:323-774-6475" class="contact-details">Call Me</a>
+            <a data-aos="slide-down" data-aos-easing="ease" data-aos-duration="1500"  id="profile-link" href="https://github.com/shawnantonucci" target="_blank" class="contact-details">GitHub</a>
+            <a data-aos="slide-right" data-aos-easing="ease" data-aos-duration="1500"  href="mailto:shawnantonucci6688@gmail.com" class="contact-details">Send email</a>
+            <a data-aos="slide-up" data-aos-easing="ease" data-aos-duration="1500"  href="tel:323-774-6475" class="contact-details">Call Me</a>
         </div>
 
         <footer>
@@ -99,6 +100,10 @@
 
         <script src="js/main.js" async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

@@ -200,6 +200,7 @@ p {
   text-align: center;
   width: 70%;
   font-size: 2.5rem;
+  position: relative;
 }
 @media (max-width: 500px) {
   .motto h2 {
