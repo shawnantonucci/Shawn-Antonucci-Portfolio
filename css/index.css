@@ -176,6 +176,7 @@ p {
   font-size: 5rem;
   font-weight: bold;
   white-space: nowrap;
+  position: relative;
 }
 @media (max-width: 500px) {
   .intro h1 {
@@ -186,6 +187,7 @@ p {
   color: white;
   font-size: 2rem;
   white-space: nowrap;
+  position: relative;
 }
 .motto {
   display: flex;
@@ -401,6 +403,11 @@ nav ul {
 @media (max-width: 1025px) {
   nav ul {
     justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  nav ul {
+    justify-content: flex-start;
   }
 }
 nav ul li {

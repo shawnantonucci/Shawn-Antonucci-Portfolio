@@ -3,9 +3,9 @@ const introP = document.querySelector(".intro p");
 const nav = document.querySelectorAll("nav a");
 const motto = document.querySelector(".motto h2");
 
-TweenMax.from(introH1, 3, {opacity:0, width: 0});
-TweenMax.from(introP, 3, {opacity:0, width: 5000});
-TweenMax.from(nav, 3, {ease: Bounce.ease, opacity:0, width: 1000});
+TweenMax.from(introH1, 3, {opacity:0, right: 500});
+TweenMax.from(introP, 3, {opacity:0, right: 5000});
+//TweenMax.from(nav, 3, {ease: Bounce.ease, opacity:0, width: 500});
 //TweenMax.from(motto, 5, {left: 1500});
 
 
