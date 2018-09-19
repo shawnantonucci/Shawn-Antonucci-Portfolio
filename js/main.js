@@ -17,7 +17,7 @@ function myFunction(x) {
   } else {
     TweenMax.from(introH1, 3, { opacity: 0, right: 500 });
     TweenMax.from(introP, 3, { opacity: 0, left: "10%" });
-    TweenMax.from(nav, 5, { opacity: 0});
+    TweenMax.from(nav, 3, { right: 1000 });
   }
 }
 

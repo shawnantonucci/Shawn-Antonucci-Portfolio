@@ -1,10 +1,13 @@
 nav {
+
   ul {
     position: fixed;
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
+    position: relative;
 
     @media @tablet {
       justify-content: center;
@@ -19,6 +22,7 @@ nav {
       margin: 55px;
       margin-bottom: 15px;
       margin-top: 25px;
+      position: relative;
 
       @media @tablet {
         margin: 5px 5% 20px 5%;
@@ -33,6 +37,7 @@ nav {
       a {
         color: white;
         text-decoration: none;
+        position: relative;
 
         &:hover {
           color: red;
