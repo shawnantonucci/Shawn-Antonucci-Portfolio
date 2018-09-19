@@ -161,6 +161,7 @@ p {
   background-position: 50% 45%;
   min-height: 100vh;
   padding-top: 50vh;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .intro {
@@ -197,6 +198,7 @@ p {
   height: 175px;
   background-color: #4f4f4f;
   color: white;
+  overflow: hidden;
 }
 .motto h2 {
   text-align: center;
@@ -401,6 +403,7 @@ nav ul {
   justify-content: flex-end;
   z-index: 1;
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 1025px) {
   nav ul {
