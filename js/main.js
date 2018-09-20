@@ -21,9 +21,6 @@ var welcomeP = TweenMax.from("#animate3", 2, {
   left: 1500
 });
 
-var nav = TweenMax.from(".navLink", 2, {
-  right: 1500
-});
 
 // Scenes
 var scene = new ScrollMagic.Scene({
@@ -62,13 +59,6 @@ var scene = new ScrollMagic.Scene({
   .setTween(welcomeP)
   .addTo(controller);
 
-var scene = new ScrollMagic.Scene({
-  triggerElement: "#welcome-section"
-})
-  //.addIndicators()
-  .setTween(nav)
-  .addTo(controller);
+  const navLink = document.querySelector(".navLink");
 
-//TweenMax.from(introH1, 3, {opacity:0, right: 500});
-//TweenMax.from(introP, 3, {opacity:0, left: 500});
-//TweenMax.from(nav, 2, {ease: Bounce.ease, opacity:0, width: 500});
+  TweenMax.from(".navLink", 2, {right: 1500});
