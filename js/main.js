@@ -1,35 +1,74 @@
-const introH1 = document.querySelector(".intro h1");
-const introP = document.querySelector(".intro p");
-const nav = document.querySelectorAll("nav a");
-const motto = document.querySelector(".motto h2");
+var controller = new ScrollMagic.Controller();
 
-TweenMax.from(introH1, 3, {opacity:0, right: 500});
-TweenMax.from(introP, 3, {opacity:0, left: 500});
-TweenMax.from(nav, 2, {ease: Bounce.ease, opacity:0, width: 500});
-//TweenMax.from(motto, 5, {right: 1500});
+// Tweens
+var motto = TweenMax.from("#animate1", 1, {
+  right: 1500
+});
 
-// function myFunction(x) {
-//   if (x.matches) {
-//     // If media query matches
-//     TweenMax.from(introH1, 3, { opacity: 0, bottom: 200 });
-//     TweenMax.from(introP, 3, { opacity: 0, top: 200 });
-//     TweenMax.from(nav, 2, { ease: Bounce.ease, opacity: 0});
-//   } else {
-//     TweenMax.from(introH1, 3, { opacity: 0, right: 500 });
-//     TweenMax.from(introP, 3, { opacity: 0, left: "10%" });
-//     TweenMax.from(nav, 3, { right: 1000 });
-//   }
-// }
+var motto2 = TweenMax.from("#animate4", 1, {
+  left: 1500
+});
 
-// var x = window.matchMedia("(max-width: 500px)");
-// myFunction(x); // Call listener function at run time
-// x.addListener(myFunction); // Attach listener function on state changes
+var motto3 = TweenMax.from("#animate5", 1, {
+  right: 1500
+});
 
-// function Scroll() {
-//     const ypos = window.pageYOffset;
-//     if(ypos > 175) {
-//         TweenMax.from(motto, 5, {right: 1500});
-//     }
-// }
+var welcomeH1 = TweenMax.from("#animate2", 2, {
+  right: 1500
+});
 
-// window.addEventListener("scroll", Scroll);
+var welcomeP = TweenMax.from("#animate3", 2, {
+  left: 1500
+});
+
+var nav = TweenMax.from(".navLink", 2, {
+  right: 1500
+});
+
+// Scenes
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".intro",
+  offset: 500
+})
+  //.addIndicators()
+  .setTween(motto)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#motto2"
+})
+  //.addIndicators()
+  .setTween(motto2)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#motto3"
+})
+  //.addIndicators()
+  .setTween(motto3)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#welcome-section"
+})
+  //.addIndicators()
+  .setTween(welcomeH1)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#welcome-section"
+})
+  //.addIndicators()
+  .setTween(welcomeP)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#welcome-section"
+})
+  //.addIndicators()
+  .setTween(nav)
+  .addTo(controller);
+
+//TweenMax.from(introH1, 3, {opacity:0, right: 500});
+//TweenMax.from(introP, 3, {opacity:0, left: 500});
+//TweenMax.from(nav, 2, {ease: Bounce.ease, opacity:0, width: 500});

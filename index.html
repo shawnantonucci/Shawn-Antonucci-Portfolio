@@ -7,30 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shawn Antonucci's Portfolio</title>
 
-    <script src="js/main.js" defer></script>
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 </head>
 
 <body>
     <nav>
         <ul id="navbar">
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#certification">Certificates</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="navLink"><a href="#welcome-section">Home</a></li>
+            <li class="navLink"><a href="#projects">Work</a></li>
+            <li class="navLink"><a href="#certification">Certificates</a></li>
+            <li class="navLink"><a href="#about-me">About</a></li>
+            <li class="navLink"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div id="welcome-section" class="intro">
 
-        <h1>Hello, I am Shawn,</h1>
-        <p>a web developer.</p>
+        <h1 id="animate2">Hello, I am Shawn,</h1>
+        <p id="animate3">a web developer.</p>
 
     </div>
 
     <div class="motto">
-        <h2 data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">I create websites exactly how my
+        <h2 id="animate1" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">I create websites exactly how my
             clients want them. Responsiveness, neatness and cleanliness are a
             necessity!</h2>
     </div>
@@ -48,8 +47,8 @@
         <a href="" class="show-all" target="_blank">Show all</a>
     </div>
 
-    <div class="motto">
-        <h2 data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+    <div id="motto2" class="motto">
+        <h2 id="animate4" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
             “Getting a quality website is not an expenses but rather an investment.” </h2>
     </div>
 
@@ -66,8 +65,8 @@
 
         <a href="" class="show-all" target="_blank">Show all</a>
 
-        <div class="motto">
-            <h2 data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
+        <div id="motto3" class="motto">
+            <h2 id="animate5" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
                 “How well we communicate is determined not by how well we say things, but how well we are understood.”
                 –Andrew Grove </h2>
         </div>
@@ -104,11 +103,14 @@
             <a href="#welcome-section">Shawn Antonucci's Portfolio</a>
         </footer>
 
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        <script src="js/main.js" defer></script>
 </body>
 
 </html>

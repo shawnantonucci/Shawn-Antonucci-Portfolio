@@ -402,7 +402,6 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   z-index: 1;
-  position: relative;
   overflow: hidden;
 }
 @media (max-width: 1025px) {
