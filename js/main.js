@@ -28,7 +28,7 @@ var nav = TweenMax.from(".navLink", 2, {
 // Scenes
 var scene = new ScrollMagic.Scene({
   triggerElement: ".intro",
-  offset: 500
+  offset: 700
 })
   //.addIndicators()
   .setTween(motto)
