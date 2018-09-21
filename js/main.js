@@ -1,15 +1,7 @@
 var controller = new ScrollMagic.Controller();
 
 // Tweens
-var motto = TweenMax.from("#animate1", 1, {
-  right: 1500
-});
-
-var motto2 = TweenMax.from("#animate4", 1, {
-  left: 1500
-});
-
-var motto3 = TweenMax.from("#animate5", 1, {
+var motto = TweenMax.from("#animate1", .5, {
   right: 1500
 });
 
@@ -21,11 +13,33 @@ var welcomeP = TweenMax.from("#animate3", 2, {
   left: 1500
 });
 
+var motto2 = TweenMax.from("#animate4", .5, {
+  left: 1500
+});
+
+var motto3 = TweenMax.from("#animate5", .5, {
+  right: 1500
+});
+
+var git = TweenMax.from("#git", 1, {
+  left: 1000
+});
+
+var email = TweenMax.from("#email", 1, {
+  right: 1000
+});
+
+var contactH1 = TweenMax.from("#contactH1", 3, {
+  opacity: 0
+});
+
+var contactP = TweenMax.from("#contactP", 3, {
+  opacity: 0
+});
 
 // Scenes
 var scene = new ScrollMagic.Scene({
-  triggerElement: ".intro",
-  offset: 700
+  triggerElement: ".motto"
 })
   //.addIndicators()
   .setTween(motto)
@@ -59,6 +73,34 @@ var scene = new ScrollMagic.Scene({
   .setTween(welcomeP)
   .addTo(controller);
 
-  const navLink = document.querySelector(".navLink");
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#contactH1"
+})
+  //.addIndicators()
+  .setTween(email)
+  .addTo(controller);
 
-  TweenMax.from(".navLink", 2, {right: 1500});
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#contactH1"
+})
+  //.addIndicators()
+  .setTween(git)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#contact"
+})
+  //.addIndicators()
+  .setTween(contactH1)
+  .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#contact"
+})
+  //.addIndicators()
+  .setTween(contactP)
+  .addTo(controller);
+
+const navLink = document.querySelector(".navLink");
+
+TweenMax.from(".navLink", 2, { right: 1500 });
