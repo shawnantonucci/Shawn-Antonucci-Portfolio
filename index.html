@@ -8,7 +8,7 @@
     <title>Shawn Antonucci's Portfolio</title>
 
     <link href="css/index.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="./components/tab.js" async></script>
 </head>
 
 <body>
@@ -41,13 +41,19 @@
 
     <div id="projects" class="work">
         <h2 class="work-header">Here are some of my projects.</h2>
-        <a href="https://bellotti-cleaning-service.netlify.com/" target="_blank" class="project project-tile">
-            <img class="project-pic" src="/img/Bellottis-cleaning-service.PNG" alt="project">
-            <div class="project-title">Bellotti's Cleaning Service</div>
-        </a>
-        <a href="" class="show-all" target="_blank">Show all</a>
+        <div class="workCard">
+
+            <!-- Projects -->
+            <a href="https://bellotti-cleaning-service.netlify.com/" target="_blank" class="project project-tile">
+                <img class="project-pic" src="/img/Bellottis-cleaning-service.PNG" alt="project">
+                <div class="project-title">Bellotti's Cleaning Service</div>
+            </a>
+        </div>
+        <button class="workbtn">Show all</button>
     </div>
 
+            <!-- End Projects -->
+            
     <div id="motto2" class="motto">
         <h2 id="animate4" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
             “Getting a quality website is not an expenses but rather an investment.” </h2>
@@ -55,16 +61,21 @@
 
     <div id="certification" class="work">
         <h2 class="work-header">My Certificates</h2>
-        <a href="https://www.freecodecamp.org/certification/shawnantonucci/responsive-web-design" target="_blank" class="project project-tile">
-            <img class="project-pic" src="/img/responsive-web-design.PNG" alt="Certificate">
-            <div class="project-title">Responsive Web Design</div>
-        </a>
-        <a href="https://confirm.udacity.com/2PAKTFUQ" target="_blank" class="project project-tile">
-            <img class="project-pic" src="/img/Programming Nanodegree.PNG" alt="Certificate">
-            <div class="project-title">Programming Nanodegree</div>
-        </a>
+        <div class="certificateCard">
+            <!-- Certificates -->
+            <a href="https://www.freecodecamp.org/certification/shawnantonucci/responsive-web-design" target="_blank" class="project project-tile">
+                <img class="project-pic" src="/img/responsive-web-design.PNG" alt="Certificate">
+                <div class="project-title">Responsive Web Design</div>
+            </a>
+            <a href="https://confirm.udacity.com/2PAKTFUQ" target="_blank" class="project project-tile">
+                <img class="project-pic" src="/img/Programming Nanodegree.PNG" alt="Certificate">
+                <div class="project-title">Programming Nanodegree</div>
+            </a>
 
-        <a href="" class="show-all" target="_blank">Show all</a>
+            <!--  End Certificates -->
+
+        </div>
+        <button class="certbtn">Show all</button>
 
         <div id="motto3" class="motto">
             <h2 id="animate5" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">

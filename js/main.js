@@ -1,32 +1,37 @@
 var controller = new ScrollMagic.Controller();
 
 // Tweens
-var motto = TweenMax.from("#animate1", .5, {
-  right: 1500
+var motto = TweenMax.from("#animate1", 1, {
+  right: 1800,
+  ease: Back.easeOut.config(1.7)
 });
 
 var welcomeH1 = TweenMax.from("#animate2", 2, {
-  right: 1500
+  right: 1800
 });
 
 var welcomeP = TweenMax.from("#animate3", 2, {
-  left: 1500
+  left: 1800
 });
 
-var motto2 = TweenMax.from("#animate4", .5, {
-  left: 1500
+var motto2 = TweenMax.from("#animate4", 1, {
+  left: 1800,
+  ease: Back.easeOut.config(1.7)
 });
 
-var motto3 = TweenMax.from("#animate5", .5, {
-  right: 1500
+var motto3 = TweenMax.from("#animate5", 1, {
+  right: 1800,
+  ease: Back.easeOut.config(1.7)
 });
 
-var git = TweenMax.from("#git", 1, {
-  left: 1000
+var git = TweenMax.from("#git", 1.5, {
+  left: 1200,
+  ease: Back.easeOut.config(1.7)
 });
 
-var email = TweenMax.from("#email", 1, {
-  right: 1000
+var email = TweenMax.from("#email", 1.5, {
+  right: 1200,
+  ease: Back.easeOut.config(1.7)
 });
 
 var contactH1 = TweenMax.from("#contactH1", 3, {
@@ -103,4 +108,4 @@ var scene = new ScrollMagic.Scene({
 
 const navLink = document.querySelector(".navLink");
 
-TweenMax.from(".navLink", 2, { right: 1500 });
+TweenMax.from(".navLink", 1, { right: 1500 });
