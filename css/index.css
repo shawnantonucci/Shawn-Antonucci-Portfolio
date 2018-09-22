@@ -135,7 +135,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 h1 {
@@ -328,10 +328,12 @@ p {
 }
 #about-me {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid black;
 }
 #about-me h2 {
   font-size: 3rem;
