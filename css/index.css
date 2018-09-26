@@ -304,6 +304,10 @@ p {
   width: 300px;
   margin: 100px 10% 50px 10%;
 }
+#projects .project:hover,
+#certification .project:hover {
+  border-bottom: 2px solid #2fc8f7;
+}
 @media (max-width: 1025px) {
   #projects .project,
   #certification .project {
@@ -320,7 +324,11 @@ p {
 #certification .project .project-pic {
   width: 100%;
   height: 180px;
-  border-bottom: 2px solid lightblue;
+  border-bottom: 2px solid #000000;
+}
+#projects .project .project-pic:hover,
+#certification .project .project-pic:hover {
+  border-bottom: 2px solid #2fc8f7;
 }
 #projects .project .project-title,
 #certification .project .project-title {
