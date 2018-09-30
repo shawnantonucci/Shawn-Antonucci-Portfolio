@@ -267,7 +267,13 @@ p {
 #projects .active,
 #certification .active {
   visibility: visible;
-  max-height: 800px;
+  max-height: 1071px;
+}
+@media (max-width: 500px) {
+  #projects .active,
+  #certification .active {
+    max-height: 1386px;
+  }
 }
 #projects button,
 #certification button {
